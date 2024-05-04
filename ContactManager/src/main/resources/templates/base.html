@@ -1,0 +1,29 @@
+<!--class="dark"-->
+<!DOCTYPE html>
+<html  lang="en" th:fragment="parent(content,title)" xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" data-th-href="@{'/output.css'}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+    <title data-th-replace="${title}">SCM</title>
+</head>
+<body>
+<div data-th-replace="navbar::navbar">
+
+</div>
+
+ <!--common footer-->
+
+<!--<footer>
+    with just learning
+</footer>-->
+
+<section data-th-replace="${content}">
+
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+</body>
+</html>
